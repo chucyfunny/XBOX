@@ -1,0 +1,9 @@
+# 圈X配置文件
+
+[rewrite_local]
+# 修改Xbox购物车区域到尼日利亚区
+^https:\/\/cart\.production\.store-web\.dynamics\.com\/v1\.0\/cart\/loadCart\?cartType=consumer&appId=XboxWeb url script-request-body https://raw.githubusercontent.com/chucyfunny/XBOX/main/xbox_cart_nigeria.js
+
+
+[mitm]
+hostname = cart.production.store-web.dynamics.com
